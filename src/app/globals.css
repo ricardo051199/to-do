@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background-color: #6f42c1;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.app-header h1 {
+  font-size: 1.5rem;
+}
+
+.app-main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Wallet Connect Styles */
+.wallet-connect {
+  padding: 0.5rem;
+}
+
+.connected-wallet {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.disconnect-btn, .wallet-btn {
+  background-color: #ffffff;
+  color: #6f42c1;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.wallet-options {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Todo Container Styles */
+.todo-container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.todo-header h1 {
+  color: #6f42c1;
+}
+
+.create-list-btn {
+  background-color: #6f42c1;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.create-list-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.todo-content {
+  margin-top: 1.5rem;
+}
+
+.list-selector {
+  margin-bottom: 2rem;
+}
+
+.list-selector h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.list-select {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  width: 100%;
+  max-width: 300px;
+}
+
+.selected-list h2 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.todo-items {
+  list-style-type: none;
+  margin-bottom: 1.5rem;
+}
+
+.todo-item {
+  padding: 0.75rem;
+  background-color: #f8f9fa;
+  border-left: 4px solid #6f42c1;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+}
+
+.add-item-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.item-input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.add-item-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.add-item-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}
